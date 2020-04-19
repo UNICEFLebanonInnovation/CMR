@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_white"
+    tools:context=".ResourcesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/dummy_rel_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical">
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/survivor_rel_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/forms_card_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="6dp">
+
+
+                <TextView
+                    android:id="@+id/survivor_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/forms"
+                    android:textColor="@color/colorUnicef"
+                    android:textSize="20sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:contentDescription="TODO"
+                android:elevation="2dp"
+                android:src="@drawable/menu_welcome" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/medication_rel_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/coverage_card_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="6dp">
+
+                <TextView
+                    android:id="@+id/medication_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/coverage"
+                    android:textColor="@color/colorUnicef"
+                    android:textSize="20sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:contentDescription="This is a icon referring to the medication"
+                android:elevation="2dp"
+                android:src="@drawable/menu_medication" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/referral_rel_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/legal_card_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="6dp">
+
+                <TextView
+                    android:id="@+id/referrals_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/legal"
+                    android:textColor="@color/colorUnicef"
+                    android:textSize="20sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:contentDescription="This is a icon referring to the referral"
+                android:elevation="2dp"
+                android:src="@drawable/menu_referrals" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/resources_rel_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/reference_card_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="6dp">
+
+                <TextView
+                    android:id="@+id/resources_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/references"
+                    android:textColor="@color/colorUnicef"
+                    android:textSize="20sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:contentDescription="This is a icon referring to the resources"
+                android:elevation="2dp"
+                android:src="@drawable/menu_resources" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    
+
+
+</android.support.constraint.ConstraintLayout>

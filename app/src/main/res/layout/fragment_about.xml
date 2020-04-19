@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_about_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/medication_card_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="@string/about"
+                    android:textColor="@color/colorUnicef"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/about_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="The Clinical Mobile Application (CMR) is an offline downloadable mobile application for trained health professionals providing health care for rape survivors.\nThe aim to have a resource pack on CMR treatment, soft skills and referral pathway for GBV survivors. The Application is developed by UNICEF in collaboration with Lebanese Ministry of Public Health, ABAAD and CMR Working group."
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/about_logos" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
